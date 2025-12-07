@@ -58,6 +58,11 @@
             background-color: #3498db;
             color: white;
             font-weight: 600;
+            text-align: center;
+        }
+        
+        th:first-child {
+            text-align: left;
         }
 
         tr:hover {
@@ -96,19 +101,25 @@
             font-weight: 500;
         }
 
-        .checked {
+        .guess-component.checked {
             font-weight: bold;
             color: #4CAF50;
         }
 
-        .x {
+        .guess-component.x {
             text-decoration: line-through;
             color: #999;
         }
 
-        .question {
+        .guess-component.question {
             font-style: italic;
             color: #FF9800;
+        }
+
+        .status-display {
+            text-align: center;
+            font-size: 20px;
+            width: 60px;
         }
 
         .footer {
@@ -161,60 +172,91 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
             <tr>
                 <td class="guess-component">Mustard</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Plum</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Green</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Peacock</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Scarlet</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">White</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
         </table>
@@ -223,60 +265,91 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
             <tr>
                 <td class="guess-component">Knife</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Candlestick</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Pistol</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Poison</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Rope</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Dumbbell</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
         </table>
@@ -285,87 +358,133 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
             <tr>
                 <td class="guess-component">Hall</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Dining Room</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Kitchen</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Patio</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Observatory</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Theatre</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Living Room</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Spa</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
             <tr>
                 <td class="guess-component">Guest House</td>
+                <td class="status-display"></td>
                 <td class="status-buttons">
-                    <button class="status-btn" data-status="unchecked">⬜</button>
                     <button class="status-btn" data-status="x">❌</button>
                     <button class="status-btn" data-status="question">❓</button>
                     <button class="status-btn" data-status="checked">✅</button>
+                    <button class="status-btn color-btn" data-status="red">🔴</button>
+                    <button class="status-btn color-btn" data-status="blue">🔵</button>
+                    <button class="status-btn color-btn" data-status="yellow">🟡</button>
+                    <button class="status-btn color-btn" data-status="green">🟢</button>
+                    <button class="status-btn color-btn" data-status="purple">🟣</button>
                 </td>
             </tr>
         </table>
@@ -386,54 +505,69 @@
         window.onload = function () {
             const buttons = document.getElementsByClassName('status-btn');
             
-            // Set all unchecked buttons as active by default
-            const uncheckedButtons = document.querySelectorAll('.status-btn[data-status="unchecked"]');
-            uncheckedButtons.forEach(btn => btn.classList.add('active'));
-            
             for (let i = 0; i < buttons.length; i++) {
                 buttons[i].onclick = function () {
                     const status = this.getAttribute('data-status');
-                    const clue = this.closest('tr').querySelector('.guess-component');
+                    const row = this.closest('tr');
+                    const statusDisplay = row.querySelector('.status-display');
+                    const guessComponent = row.querySelector('.guess-component');
+                    const isColorButton = this.classList.contains('color-btn');
                     
-                    // Remove all status classes
-                    clue.classList.remove('x', 'checked', 'question');
-                    
-                    // Remove active state from all buttons in this row
-                    const rowButtons = this.closest('.status-buttons').querySelectorAll('.status-btn');
-                    rowButtons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Add the appropriate class and mark button as active
-                    if (status === 'x') {
-                        clue.classList.add('x');
-                        this.classList.add('active');
-                    } else if (status === 'checked') {
-                        clue.classList.add('checked');
-                        this.classList.add('active');
-                    } else if (status === 'question') {
-                        clue.classList.add('question');
-                        this.classList.add('active');
+                    // Check if clicking an already active button (to clear it)
+                    if (this.classList.contains('active')) {
+                        // Clear this button
+                        this.classList.remove('active');
+                        
+                        // If it's a status button, clear the status display and text styling
+                        if (!isColorButton) {
+                            statusDisplay.textContent = '';
+                            guessComponent.classList.remove('x', 'checked', 'question');
+                        }
                     } else {
-                        // unchecked - just mark button as active
-                        this.classList.add('active');
+                        if (isColorButton) {
+                            // Color buttons: just toggle active state, multiple can be selected
+                            this.classList.add('active');
+                        } else {
+                            // Status buttons: clear other status buttons (not colors), update display and text
+                            const statusButtons = row.querySelectorAll('.status-btn:not(.color-btn)');
+                            statusButtons.forEach(btn => btn.classList.remove('active'));
+                            this.classList.add('active');
+                            
+                            // Update status display and name styling
+                            guessComponent.classList.remove('x', 'checked', 'question');
+                            
+                            if (status === 'x') {
+                                statusDisplay.textContent = '❌';
+                                guessComponent.classList.add('x');
+                            } else if (status === 'checked') {
+                                statusDisplay.textContent = '✅';
+                                guessComponent.classList.add('checked');
+                            } else if (status === 'question') {
+                                statusDisplay.textContent = '❓';
+                                guessComponent.classList.add('question');
+                            }
+                        }
                     }
                 };
             }
             
             // Reset all button
             document.getElementById('reset-all').onclick = function() {
-                // Remove all status classes from items
-                const allClues = document.querySelectorAll('.guess-component');
-                allClues.forEach(clue => {
-                    clue.classList.remove('x', 'checked', 'question');
+                // Clear all status displays
+                const allStatusDisplays = document.querySelectorAll('.status-display');
+                allStatusDisplays.forEach(display => {
+                    display.textContent = '';
                 });
                 
-                // Remove active state from all buttons
+                // Clear all name styling
+                const allGuessComponents = document.querySelectorAll('.guess-component');
+                allGuessComponents.forEach(component => {
+                    component.classList.remove('x', 'checked', 'question');
+                });
+                
+                // Remove active state from all buttons (both status and color)
                 const allButtons = document.querySelectorAll('.status-btn');
                 allButtons.forEach(btn => btn.classList.remove('active'));
-                
-                // Set all unchecked buttons as active
-                const uncheckedButtons = document.querySelectorAll('.status-btn[data-status="unchecked"]');
-                uncheckedButtons.forEach(btn => btn.classList.add('active'));
             };
         };
     </script>
