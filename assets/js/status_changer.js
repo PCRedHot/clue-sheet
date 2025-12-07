@@ -1,36 +1,33 @@
-function statusButtonChanger (control) {
-  const Data = [
-    { status: 'unchecked', value: '\u2B1C' },
-    { status: 'x', value: '\u274c' },
-    { status: 'question', value: '\u2753' },
-    { status: 'checked', value: '\u2705' }
-  ]
-
-  let index = Data.map(function (e) { return e.value }).indexOf(control.value)
-  index++
-  if ((index) >= Data.length) {
-    index = 0
-  }
-  control.value = Data[index].value
-  const clue = $(control).closest('td').siblings('.guess-component') // eslint-disable-line no-undef
-  switch (Data[index].status) {
-    case 'x':
-      clue.toggleClass('x').siblings().removeClass('checked')
-      break
-    case 'checked':
-      clue.toggleClass('checked').siblings().removeClass('x')
-      break
-    default:
-      clue.removeClass('x checked')
-  }
-}
-
-// Attach function to all checkboxes
+// Attach function to all status buttons
 window.onload = function () {
-  const elements = document.getElementsByClassName('multi-checkbox')
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].onclick = function () {
-      statusButtonChanger(this)
+  const buttons = document.getElementsByClassName('status-btn')
+  
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+      const status = this.getAttribute('data-status')
+      const clue = this.closest('tr').querySelector('.guess-component')
+      
+      // Remove all status classes
+      clue.classList.remove('x', 'checked', 'question')
+      
+      // Remove active state from all buttons in this row
+      const rowButtons = this.closest('.status-buttons').querySelectorAll('.status-btn')
+      rowButtons.forEach(btn => btn.classList.remove('active'))
+      
+      // Add the appropriate class and mark button as active
+      if (status === 'x') {
+        clue.classList.add('x')
+        this.classList.add('active')
+      } else if (status === 'checked') {
+        clue.classList.add('checked')
+        this.classList.add('active')
+      } else if (status === 'question') {
+        clue.classList.add('question')
+        this.classList.add('active')
+      } else {
+        // unchecked - just mark button as active
+        this.classList.add('active')
+      }
     }
   }
 }
