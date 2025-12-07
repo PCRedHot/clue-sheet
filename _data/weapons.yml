@@ -6,28 +6,18 @@
   base: true
   emoji: 🕎
 
-- name: Revolver
+- name: Pistol
   base: true
   emoji: 🔫
+
+- name: Poison
+  base: true
+  emoji: 🧪
 
 - name: Rope
   base: true
   emoji: ⛓️
 
-- name: Lead Pipe
+- name: Dumbbell
   base: true
-  emoji: 🦿
-
-- name: Wrench
-  base: true
-  emoji: 🔧
-
-- name: Poison
-  base: false
-  edition: master
-  emoji: 🏺
-
-- name: Horseshoe
-  base: false
-  edition: master
-  emoji: 🐴
+  emoji: 🏋️

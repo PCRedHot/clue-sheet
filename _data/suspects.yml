@@ -1,44 +1,24 @@
-- name: Col. Mustard
+- name: Mustard
   base_character: true
   emoji: 🟨
 
-- name: Dr. Orchid
-  base_character: true
-  emoji: 🎴
-
-- name: Prof. Plum
+- name: Plum
   base_character: true
   emoji: 🟪
 
-- name: Mr. Green
+- name: Green
   base_character: true
   emoji: 🟩
 
-- name: Mrs. Peacock
+- name: Peacock
   base_character: true
   emoji: 🦚
 
-- name: Mrs. Scarlet
+- name: Scarlet
   base_character: true
   emoji: 🟥
 
-- name: Mme. Rose
-  base_character: false
-  edition: master
-  emoji: 🌹
-
-- name: Sgt. Gray
-  base_character: false
-  edition: master
-  emoji: 👨‍🦳
-
-- name: M. Brunette
-  base_character: false
-  edition: master
-  emoji: 🟫
-
-- name: Ms. Peach
-  base_character: false
-  edition: master
-  emoji: 🍑
+- name: White
+  base_character: true
+  emoji: ⚪
 
